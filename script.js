@@ -238,7 +238,7 @@ function createTab(name, switchTo = true, tabType) {
  * Library Management System with Simple Database
  *
  * This project is Databas System developed
- * using <span style="color: orange;">Java</span> in Visual Studio Code.
+ * using <span style="color: orange;">Java</span> in Netbeans.
  * It is a system designed to to manage various 
  * Library operations, encompassing user
  * Authentication, book management, member 

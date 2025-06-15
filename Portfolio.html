@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="design.css" />
+</head>
+<body>
+  <div class="border-frame">
+    <div class="wrapper">
+      <header class="topnav">
+        <span class="logo">Jethro Isuga</span>
+        <div class="menu-toggle" id="mobile-menu">
+          ☰ </div>
+        <nav id="main-nav">
+          <a href="#" onclick="setMainTab('_home')">_home</a>
+          <a href="#" onclick="setMainTab('_about-me')">_about-me</a>
+          <a href="#" onclick="setMainTab('_projects')">_projects</a>
+        </nav>
+      </header>
+
+      <div class="container">
+        <aside class="sidebar" id="main-sidebar" style="display:none;">
+          <nav>
+            <a class="menu-title">↓ 📁 Personal-Info</a>
+            <a href="#" onclick="openTab('bio')"> > 📝 bio</a>
+            <a class="menu-title2">↓ 📁 Education</a>
+            <a href="#" onclick="openTab('high-school')"> > 📝 high-school</a>
+            <a href="#" onclick="openTab('university')"> > 📝 university</a>
+          </nav>
+        </aside>
+
+        <aside class="sidebar" id="projects-sidebar" style="display:none;">
+          <nav>
+            <a href="#" onclick="openProject('Project 1')"> > 🛠 Project 1</a>
+            <a href="#" onclick="openProject('Project 2')"> > 🛠 Project 2</a>
+            <a href="#" onclick="openProject('Project 3')"> > 🛠 Project 3</a>
+            </nav>
+        </aside>
+
+        <div class="main">
+          <div class="subtabs" id="subtabs"></div>
+          <main class="editor" id="editor">
+            <div class="main-tab" id="_home">
+              <pre>Hello! I am</pre>
+              <pre><h1 class="main-heading">Jethro Isuga</h1></pre>
+              <pre class="info"><h2 class="sub-heading">IT Student | Aspiring Cybersecurity Analyst & Developer</h2></pre>
+              <div class="margin">
+                <pre style="color: gray;">//My Number</pre>
+                <pre class="num"><span style="color: #6960EC;">const </span><span>phoneNum</span> = +63 927 662 5979;</pre>
+                <pre style="color: gray;">//My Email</pre>
+                <pre class="num"><span style="color: #6960EC;">const </span><span>email</span> = <span style="color: rgba(223, 153, 23, 0.808);">"Isugajb@student.nu-moa.edu.ph"</span>;</pre>
+              </div>
+            </div>
+
+            <div class="main-tab" id="_about-me"></div>
+            <div class="main-tab" id="_projects"><pre></pre></div>
+          </main>
+        </div>
+
+        <aside class="skills-sidebar" id="skills-sidebar" style="display:none;">
+          <nav>
+            <div class="skills-section">
+              <div class="skill-item">
+                <label><img src="Images/file-type-html.svg" alt="HTML Icon"> HTML</label>
+                <div class="star-rating">★★★★☆</div>
+              </div>
+              <div class="skill-item">
+                <label><img src="Images/css_icon.png" alt="CSS Icon"> CSS</label>
+                <div class="star-rating">★★★☆☆</div>
+              </div>
+              <div class="skill-item">
+                <label><img src="Images/file-type-js-official.svg" alt="JavaScript Icon"> Javascript</label>
+                <div class="star-rating">★★★☆☆</div>
+              </div>
+            </div>
+            <div class="skills-section">
+              <div class="skill-item">
+                <label><img src="Images/java.svg" alt="Java Icon"> Java</label>
+                <div class="star-rating">★★★☆☆</div>
+              </div>
+              <div class="skill-item">
+                <label><img src="Images/android_icon.png" alt="Android Studio Icon"> Android Studio</label>
+                <div class="star-rating">★★★★☆</div>
+              </div>
+              <div class="skill-item">
+                <label><img src="Images/file-type-vscode.svg" alt="Visual Studio Code Icon"> Visual Studio Code</label>
+                <div class="star-rating">★★★☆☆</div>
+              </div>
+              <div class="skill-item">
+                <label><img src="Images/netbeans_icon.png" alt="Netbeans Icon"> Netbeans</label>
+                <div class="star-rating">★★☆☆☆</div>
+              </div>
+              <div class="skill-item">
+                <label><img src="Images/file-type-word.svg" alt="Microsoft Word"> Microsoft Word</label>
+                <div class="star-rating">★★★★☆</div>
+              </div>
+            </div>
+          </nav>
+        </aside>
+
+        <aside class="video-sidebar" id="video-sidebar" style="display:none;">
+          <nav>
+            <div class="video-container">
+                <iframe id="project-video-frame" width="100%" height="auto" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </nav>
+        </aside>
+
+        </div>
+        <footer>
+          <p>© 2025 Jethro Isuga. All rights reserved.</p>
+        </footer>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
